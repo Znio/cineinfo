@@ -37,12 +37,10 @@ class MovieListing extends React.Component {
         showLoader: false
     }
     componentDidMount() {
-        console.log('ovieName');
         const { movieName } = this.props.match.params
-        console.log(movieName);
 
         if (movieName) {
-            console.log('movieName', movieName)
+
             this.fetchSearchMovieList(movieName)
         }
         else
@@ -76,7 +74,6 @@ class MovieListing extends React.Component {
     fetchSortedMovieList = async () => {
         this.setState({ showLoader: true });
         const { releaseDate, sortBy } = this.state
-        console.log('fetch', sortBy);
         try {
             const sortResponse = await axios.get(`${API_URL}discover/movie`,
                 {
@@ -123,7 +120,6 @@ class MovieListing extends React.Component {
 
     handleSortBy = async () => {
         const { activeSort, sortBy } = this.state;
-        console.log('handleSortBy', activeSort);
         switch (activeSort) {
             case 'name':
                 await this.setState({
@@ -156,11 +152,7 @@ class MovieListing extends React.Component {
     }
 
     getActiveClass = (sortBy) => {
-
         const { activeSort } = this.state;
-        console.log(
-            'getActiveClass', activeSort
-        )
         if (activeSort === sortBy)
             return 'sort-item active'
         else
@@ -206,9 +198,6 @@ class MovieListing extends React.Component {
                 <Container className="movie-list-holder">
                     <div className="section-header">
                         <h2>Showing {movieList.length} Movies</h2>
-                        <p className="see-all" onClick={this.fetchSortedMovieList}>
-                            <a>see all</a>
-                        </p>
                     </div>
                     <div className="sorting-section mb-5">
                         <div className="mr-md-3 sort-header">Sort By</div>

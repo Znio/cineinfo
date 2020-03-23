@@ -55,8 +55,6 @@ class MovieDetails extends React.Component {
          releaseDate: movieDetail.release_date,
          imageList: [...movieDetail.images.backdrops]
       })
-
-      console.log('this.state.videoSrc', this.state.videoSrc[0].key)
    }
 
    handleToggleVideoModal = () => {
@@ -191,7 +189,6 @@ class MovieDetails extends React.Component {
                      </div>
                   </Col>
                   <Col sm={12} md={8}>
-                     {console.log(videoSrc, "{`https://www.youtube.com/embed/${videoSrc}`}")}
                      <iframe width="100%" height="345" src={`https://www.youtube.com/embed/${videoSrc}`}>
                      </iframe>
                   </Col>
