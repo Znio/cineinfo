@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/cineinfo/static/css/main.964e8bac.chunk.css",
-    "main.js": "/cineinfo/static/js/main.031a444a.chunk.js",
-    "main.js.map": "/cineinfo/static/js/main.031a444a.chunk.js.map",
-    "runtime-main.js": "/cineinfo/static/js/runtime-main.3a9c0e08.js",
-    "runtime-main.js.map": "/cineinfo/static/js/runtime-main.3a9c0e08.js.map",
-    "static/css/2.de424728.chunk.css": "/cineinfo/static/css/2.de424728.chunk.css",
-    "static/js/2.6588eb17.chunk.js": "/cineinfo/static/js/2.6588eb17.chunk.js",
-    "static/js/2.6588eb17.chunk.js.map": "/cineinfo/static/js/2.6588eb17.chunk.js.map",
-    "index.html": "/cineinfo/index.html",
-    "precache-manifest.2edbc6af22520c137a65f39a46598076.js": "/cineinfo/precache-manifest.2edbc6af22520c137a65f39a46598076.js",
-    "service-worker.js": "/cineinfo/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/cineinfo/static/css/2.de424728.chunk.css.map",
-    "static/css/main.964e8bac.chunk.css.map": "/cineinfo/static/css/main.964e8bac.chunk.css.map",
-    "static/js/2.6588eb17.chunk.js.LICENSE.txt": "/cineinfo/static/js/2.6588eb17.chunk.js.LICENSE.txt",
-    "static/media/banner.jpg": "/cineinfo/static/media/banner.a0de6305.jpg",
-    "static/media/default-image-portrait.png": "/cineinfo/static/media/default-image-portrait.f3539392.png",
-    "static/media/style.scss": "/cineinfo/static/media/icomoon.f449ca93.eot",
-    "static/media/logo.svg": "/cineinfo/static/media/logo.6a38fde9.svg"
+    "main.css": "/cineinfo/App.js/static/css/main.24a4eeab.chunk.css",
+    "main.js": "/cineinfo/App.js/static/js/main.8ff28905.chunk.js",
+    "main.js.map": "/cineinfo/App.js/static/js/main.8ff28905.chunk.js.map",
+    "runtime-main.js": "/cineinfo/App.js/static/js/runtime-main.155896b6.js",
+    "runtime-main.js.map": "/cineinfo/App.js/static/js/runtime-main.155896b6.js.map",
+    "static/css/2.de424728.chunk.css": "/cineinfo/App.js/static/css/2.de424728.chunk.css",
+    "static/js/2.6588eb17.chunk.js": "/cineinfo/App.js/static/js/2.6588eb17.chunk.js",
+    "static/js/2.6588eb17.chunk.js.map": "/cineinfo/App.js/static/js/2.6588eb17.chunk.js.map",
+    "index.html": "/cineinfo/App.js/index.html",
+    "precache-manifest.96dda2df29050d2dec7deb68f5b0c74b.js": "/cineinfo/App.js/precache-manifest.96dda2df29050d2dec7deb68f5b0c74b.js",
+    "service-worker.js": "/cineinfo/App.js/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/cineinfo/App.js/static/css/2.de424728.chunk.css.map",
+    "static/css/main.24a4eeab.chunk.css.map": "/cineinfo/App.js/static/css/main.24a4eeab.chunk.css.map",
+    "static/js/2.6588eb17.chunk.js.LICENSE.txt": "/cineinfo/App.js/static/js/2.6588eb17.chunk.js.LICENSE.txt",
+    "static/media/banner.jpg": "/cineinfo/App.js/static/media/banner.a0de6305.jpg",
+    "static/media/default-image-portrait.png": "/cineinfo/App.js/static/media/default-image-portrait.f3539392.png",
+    "static/media/style.scss": "/cineinfo/App.js/static/media/icomoon.f449ca93.eot",
+    "static/media/logo.svg": "/cineinfo/App.js/static/media/logo.6a38fde9.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3a9c0e08.js",
+    "static/js/runtime-main.155896b6.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.6588eb17.chunk.js",
-    "static/css/main.964e8bac.chunk.css",
-    "static/js/main.031a444a.chunk.js"
+    "static/css/main.24a4eeab.chunk.css",
+    "static/js/main.8ff28905.chunk.js"
   ]
 }
