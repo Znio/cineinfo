@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 const API_URL = process.env.REACT_APP_API_URL;
-
+console.log('API_URL', API_URL)
 class Homepage extends React.Component {
     state = {
         movieList: [],
@@ -22,12 +22,13 @@ class Homepage extends React.Component {
 
     componentDidMount() {
         this.page = 1;
+        console.log("componentDidMount")
         this.fetchLatestMovieList();
     }
 
     fetchLatestMovieList = async () => {
         this.setState({ showLoader: true });
-
+        console.log("fetchLatestMovieList")
         try {
             const response = await axios.get(`${API_URL}movie/now_playing`,
                 {
@@ -50,6 +51,7 @@ class Homepage extends React.Component {
         }
         catch (error) {
             this.setState({ showLoader: false })
+            console.log('error',error)
         }
     }
 
@@ -110,7 +112,7 @@ class Homepage extends React.Component {
                                 <Col sm={12} md={2}>
                                     <Link to={`/MovieListing/${search}`}>
                                         <Button variant="primary" type="button">
-                                            Search <FontAwesomeIcon className="icon" icon="chevron-right" />  
+                                            Search <FontAwesomeIcon className="icon" icon="chevron-right" />
                                         </Button>
                                     </Link>
                                 </Col>
@@ -121,7 +123,7 @@ class Homepage extends React.Component {
                     <Container className="movie-list-holder">
                         <div className="section-header">
                             <h2>Latest Movies</h2>
-                            <p className="see-all">
+                            <p className="see-all mb-0">
                                 <Link to="/MovieListing/">see all</Link>
                             </p>
                         </div>
@@ -129,10 +131,10 @@ class Homepage extends React.Component {
                             {response.filter(Boolean).map((data, index) => (
                                 <MovieContainer
                                     movieData={data}
-                                    id = {data.id}
-                                    moviePoster = {data.poster_path}
-                                    movieTitle = {data.original_title}
-                                    movieUrls = {data.urls}
+                                    id={data.id}
+                                    moviePoster={data.poster_path}
+                                    movieTitle={data.original_title}
+                                    movieUrls={data.urls}
                                     key={index}
                                 />
                             )
