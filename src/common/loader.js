@@ -3,8 +3,10 @@ import React from 'react';
 export const Loader = () => {
 
     return (
-        <div id="loader-container">
-            <p id="loadingText">Loading</p>
+        <div className="loader-container-holder">
+            <div className="loader">
+                <p className="loading-text">Loading</p>
+            </div>
         </div>
     )
 }
