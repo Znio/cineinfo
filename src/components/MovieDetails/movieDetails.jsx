@@ -134,7 +134,7 @@ class MovieDetails extends React.Component {
                               <div className="details-content-title">Language</div>
                               <div className="details-content-data">
                                  {movieLanguages.map((language, index) => (
-                                    <span className="mr-1" key={index} >{language.iso_639_1},</span>
+                                    <span className="mr-1 has-coma" key={index} >{language.iso_639_1}</span>
                                  ))}
                               </div>
                            </div>

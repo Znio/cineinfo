@@ -248,7 +248,14 @@ select:-webkit-autofill:focus {
 .has-coma {
     &::before {
         content: ',';
+        left: -4px;
+        position: absolute;
+    }
 
+    &:first-child{
+        &::before{
+            display: none
+        }
     }
 }
 
